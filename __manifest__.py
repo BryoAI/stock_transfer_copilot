@@ -3,15 +3,16 @@
     'version': '1.0',
     'category': 'Extra Tools',
     'sequence': '-100',
-    'description': """Bryo automates your order management in Odoo by leveraging large language models like the ones used by ChatGPT""",
+    'description': """Bryo automates your stock transfers between warehouses in Odoo by leveraging large language models like the ones used by ChatGPT""",
     'author': 'Bryo UG',
     'maintainer': 'Bryo UG',
     'license': 'LGPL-3',
     'website': 'https://www.bryo.io',
-    'summary': 'Bryo automates your order management in Odoo by leveraging large language models like the ones used by ChatGPT',
+    'summary': 'Bryo automates your stock transfers between warehouses in Odoo by leveraging large language models like the ones used by ChatGPT',
     "keywords": ["fulfillment", "bard", "chatgpt", "openai", "AI", "copilot", "llm"],
     'data': [
-
+        'data/stock_transfer_copilot_channel_data.xml',
+        'data/copilot_user_partner_data.xml',
     ],
     "depends": [
         "sale",
