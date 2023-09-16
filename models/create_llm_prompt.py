@@ -1,4 +1,5 @@
 import json
+import re
 
 import pandas
 import psycopg2
@@ -83,6 +84,10 @@ def create_llm_message(df_sale_order, df_ordered_products, df_fulfillment, df_st
 
     return message_string
 
+def remove_tags(text):
+    """Remove HTML tags from a string."""
+    tags = re.compile('<.*?>')
+    return tags.sub('', text)
 
 def askai(message):
     context = create_llm_context()

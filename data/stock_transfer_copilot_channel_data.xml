@@ -17,7 +17,8 @@
         <field name="subtype_id" ref="mail.mt_comment"/>
         <field name="subject">Welcome to Bryo Copilot Channel!</field>
         <field name="body"><![CDATA[<p>Welcome to the #Bryo Copilot channel.</p>
-        <p>This AI will provide instructions for your stock transfers process</b>.</p>]]></field>
+        <p>This AI will provide instructions for your stock transfers process</b>.</p>
+        <p>what product(s) would you like to transfer and what quantity?</p>]]></field>
     </record>
 
     <record model="mail.channel.member" id="channel_member_bryo_copilot_channel_for_admin">
